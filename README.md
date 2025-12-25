@@ -1,35 +1,37 @@
 # Karar Destek Sistemleri Projesi
 
-Bu proje, Karar Destek Sistemleri dersi kapsamında geliştirilmiş basit bir yapay zeka tabanlı soru-cevap uygulamasıdır.  
-Bir teknoloji mağazasına ait temel bilgiler kullanılarak kullanıcı sorularına kontrollü cevaplar üretilmesi amaçlanmıştır.
+Bu proje, Karar Destek Sistemleri dersi kapsamında geliştirilmiş basit bir yapay zeka tabanlı soru-cevap sistemidir.  
+Bir teknoloji mağazasına ait temel politika bilgileri kullanılarak kullanıcı sorularına kontrollü cevaplar üretilmesi amaçlanmıştır.
 
 
-## Proje Amacı
+## Projenin Amacı
 
-Projenin amacı, verilen dokümanlara dayalı çalışan bir karar destek sistemi geliştirmek ve RAG yaklaşımını uygulamalı olarak göstermektir.
+Bu çalışmanın amacı, yapay zeka destekli bir karar destek sistemi geliştirerek **fine-tuning** ve **RAG (Retrieval-Augmented Generation)** yaklaşımlarını basit bir senaryo üzerinde uygulamaktır.
 
 ---
 
-## Kullanılan Yöntem
+## Kullanılan Yöntemler
 
-- Google Gemma 2B modeli LoRA yöntemi ile fine-tune edilmiştir.
-- Mağaza politikaları vektör veritabanında tutulmuştur.
-- Kullanıcı soruları, ilgili dokümanlar ile eşleştirilerek cevaplanmıştır.
-- Alakasız sorular için sistem cevap üretmemektedir.
+- **Fine-Tuning (LoRA):**  
+  Dil modelinin mağaza asistanı gibi cevap verebilmesi için örnek soru-cevaplar ile eğitilmesi amacıyla kullanılmıştır.
+
+- **RAG (Retrieval-Augmented Generation):**  
+  Modelin cevap üretirken yalnızca mağaza dokümanlarını kullanmasını sağlamak ve alakasız sorular için cevap üretmesini engellemek amacıyla uygulanmıştır.
 
 ---
 
 ## Kullanılan Teknolojiler
 
-- Python  
-- Hugging Face Transformers  
-- PEFT (LoRA)  
-- LangChain  
-- FAISS  
-- Gradio  
+- **Python:** Projenin geliştirildiği programlama dili  
+- **Hugging Face Transformers:** Dil modelinin yüklenmesi ve metin üretimi  
+- **PEFT (LoRA):** Modelin düşük maliyetle fine-tune edilmesi  
+- **FAISS:** Dokümanlar üzerinde benzerlik araması yapılması  
+- **Gradio:** Kullanıcı etkileşimi için web arayüzü  
+- **LangChain (yardımcı bileşenler):** Metin bölme ve embedding işlemleri  
 
 ---
 
 ## Sonuç
 
-Bu çalışmada, karar destek sistemleri kapsamında basit bir yapay zeka destekli soru-cevap sistemi geliştirilmiş ve RAG yaklaşımı uygulanmıştır.
+Bu projede, karar destek sistemleri kapsamında **fine-tune edilmiş** ve **RAG destekli** bir yapay zeka soru-cevap sistemi geliştirilmiştir.  
+Sistem, yalnızca verilen dokümanlara dayalı cevap üretmekte ve kontrolsüz bilgi üretimini engellemektedir.
