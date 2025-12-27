@@ -1,4 +1,4 @@
-# Karar Destek Sistemleri Projesi
+# Chatbot Projesi
 
 Bu proje, Karar Destek Sistemleri dersi kapsamında Google Gemma-2b dil modeli ile geliştirilmiş yapay zeka tabanlı bir soru-cevap sistemidir.  
 Bir teknoloji mağazasına ait temel politika bilgileri kullanılarak kullanıcı sorularına kontrollü cevaplar üretilmesi amaçlanmıştır.
